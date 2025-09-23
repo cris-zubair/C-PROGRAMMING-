@@ -1,0 +1,26 @@
+CONDITION PROGRAMING
+----------------------------------------------------------------------------
+#include <stdio.h>
+int main(){
+    int a=5;
+    int b=10;
+    int c=35;
+    if (a+b==c){
+        printf("The a+b value is equal to c");
+    }
+    else if(a-b==c){
+         printf("The a-b value is equal to c");
+    }
+    else if(a+b==15){
+        printf("The value is 15");
+    }
+    else{
+        printf("no value is true");
+    }
+    return 0;
+}
+
+OUTPUT
+The value is 1
+------------------------------------------------------------------------------
+

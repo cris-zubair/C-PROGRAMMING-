@@ -1,0 +1,30 @@
+VARIOUS DATA TYPES
+-------------------------------------------------------------
+#include <stdio.h>
+int main() {
+    int a;
+    float b;
+    char c ;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    printf("The number is %d\n", a);
+    printf("Enter a number with decimal points: ");
+    scanf("%f", &b);
+    printf("The number is %.2f\n", b);
+    printf("Enter a char: ");
+    scanf(" %c", &c);
+    printf("The char is %c\n", c);
+
+    return 0;
+}
+
+OUTPUT :
+Enter a number: 5
+The number is 5
+Enter a number with decimal points: 25.63
+The number is 25.63
+Enter a char: hello
+The char is h
+=== Code Execution Successful ===
+--------------------------------------------------------------
+

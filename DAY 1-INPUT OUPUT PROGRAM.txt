@@ -1,0 +1,19 @@
+INPUT OUPUT PROGRAM 
+---------------------------------------------------
+#include<stdio.h>
+int main(){
+    int a;
+    printf ("Enter a number: ");
+    scanf("%d",&a);
+    printf("the number is %d",a);
+}
+
+OUTPUT 
+
+Enter a number: 85
+the number is 85
+
+=== Code Execution Successful ===
+
+----------------------------------------------------
+

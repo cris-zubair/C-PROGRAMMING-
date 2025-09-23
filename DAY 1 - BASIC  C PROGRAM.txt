@@ -1,0 +1,11 @@
+INTRODUCING TO C PROGRAMMING 
+---------------------------------------------------------
+PRINT HELLO PROGRAM
+#include<stdio.h>
+int main(){
+    printf("Hello")
+}
+
+OUTPUT : 
+HELLO 
+----------------------------------------------------------
