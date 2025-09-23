@@ -1,0 +1,102 @@
+-------------------------------------------------
+STUDENTS MARKS GRADE PROGRAM 
+-------------------------------------------------
+#include <stdio.h>
+int main() {
+    char name[50];
+    int rollno;
+    char dept[20];
+    int sem;
+    int sub1, sub2, sub3, sub4, sub5;
+    int total;
+    float average;
+    char grade;
+    printf("Enter your name:");
+    scanf("%s", name);
+    printf("Enter your Roll No:");
+    scanf("%d", &rollno);
+    printf("Enter your department:");
+    scanf("%s", dept);
+    printf("Enter your current semester:");
+    scanf("%d", &sem);
+    printf("Enter the subject 1 marks: ");
+    scanf("%d", &sub1);
+    printf("Enter the subject 2 marks: ");
+    scanf("%d", &sub2);
+    printf("Enter the subject 3 marks: ");
+    scanf("%d", &sub3);
+    printf("Enter the subject 4 marks: ");
+    scanf("%d", &sub4);
+    printf("Enter the subject 5 marks: ");
+    scanf("%d", &sub5);
+    total = sub1 + sub2 + sub3 + sub4 + sub5;
+    average = total / 5;
+    if (total > 450) {
+        grade = 'O';  
+    } else if (total > 400) {
+        grade = 'A';  
+    } else if (total > 350) {
+        grade = 'B';  
+    } else if (total > 300) {
+        grade = 'C'; 
+    } else if (total == 175) {
+        grade = 'P'; 
+    } else if (total < 175) {
+        grade = 'F';
+    }
+    printf("\nStudent Details:\n");
+    printf("Name: %s\n", name);
+    printf("Roll No: %d\n", rollno);
+    printf("Department: %s\n", dept);
+    printf("Semester: %d\n", sem);
+    printf("Marks in Subject 1: %d\n", sub1);
+    printf("Marks in Subject 2: %d\n", sub2);
+    printf("Marks in Subject 3: %d\n", sub3);
+    printf("Marks in Subject 4: %d\n", sub4);
+    printf("Marks in Subject 5: %d\n", sub5);
+    printf("Total Marks: %d\n", total);
+    printf("Average Marks: %.2f\n", average);
+    if (grade == 'O') {
+        printf("Grade: O Pass\n");
+    } else if (grade == 'A') {
+        printf("Grade: A Pass\n");
+    } else if (grade == 'B') {
+        printf("Grade: B Pass\n");
+    } else if (grade == 'C') {
+        printf("Grade: C Pass\n");
+    } else if (grade == 'P') {
+        printf("Grade: Pass\n");
+    } else {
+        printf("Grade: Fail\n");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------------
+OUTPUT:
+Enter your name:Mohamed 
+Enter your Roll No:2426
+Enter your department:Mechanical
+Enter your current semester:3
+Enter the subject 1 marks: 98
+Enter the subject 2 marks: 99
+Enter the subject 3 marks: 95
+Enter the subject 4 marks: 97
+Enter the subject 5 marks: 96
+
+Student Details:
+Name: Mohamed
+Roll No: 2426
+Department: Mechanical
+Semester: 3
+Marks in Subject 1: 98
+Marks in Subject 2: 99
+Marks in Subject 3: 95
+Marks in Subject 4: 97
+Marks in Subject 5: 96
+Total Marks: 485
+Average Marks: 97.00
+Grade: O Pass
+
+
+=== Code Execution Successful ===
+--------------------------------------------------------------------------------------------------
