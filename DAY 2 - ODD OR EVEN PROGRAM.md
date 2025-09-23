@@ -8,17 +8,9 @@ int main() {
 
     int num;
 
-
-
-    // Input from user
-
     printf("Enter a number: ");
 
     scanf("%d", \&num);
-
-
-
-    // Check odd or even
 
     if (num % 2 == 0) {
 
@@ -29,8 +21,6 @@ int main() {
         printf("%d is Odd.\\n", num);
 
     }
-
-
 
     return 0;
 
@@ -43,4 +33,5 @@ OUTPUT :
 **Enter a number: 3456**
 
 **3456 is Even.**
+
 
