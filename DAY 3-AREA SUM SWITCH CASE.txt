@@ -1,0 +1,105 @@
+#include <stdio.h>
+void main()
+{
+    int s,r,l,h,b,w,num,Acircle,Arectangle,Atriangle,Asquare,Pcircle,Prectangle,Ptriangle,Psquare;
+    printf("\n----choose an option----\n");
+    printf("1.Area of Circle\n");
+    printf("2.Area of Rectangle\n");
+    printf("3.Area of Triangle\n");
+    printf("4.Area of Square\n");
+    printf("5.Perimeter of Circle\n");
+    printf("6.Perimeter of Rectangle\n");
+    printf("7.Perimeter of Triangle\n");
+    printf("8.Perimeter of Square\n");
+    printf("--------------------\n");
+    printf("Enter your choice:");
+    scanf("%d",&num);
+    switch(num){
+        case 1:
+        printf("Area of Circle\n");
+        printf("Enter the Radius:");
+        scanf("%d",&r);
+        Acircle=3.14*r*r;
+        printf("Area of Circle:%d\n",Acircle);
+        break;
+        case 2:
+        printf("Area of Rectangle\n");
+        printf("Enter the length:");
+        scanf("%d",&l);
+        printf("Enter the width:");
+        scanf("%d",&w);
+        Arectangle=l*w;
+        printf("Area of Rectangle:%d\n",Arectangle);
+        break;
+        case 3:
+        printf("Area of Triangle\n");
+        printf("Enter the breath:");
+        scanf("%d",&b);
+        printf("Enter the height:");
+        scanf("%d",&h);
+        Atriangle=0.5*b*h;
+        printf("Area of Triangle:%d\n",Atriangle);
+        break;
+        case 4:
+        printf("Area of Square\n");
+        printf("Enter the side:");
+        scanf("%d",&s);
+        Asquare=4*s;
+        printf("Area of Square:%d\n",Asquare);
+        break;
+        case 5:
+        printf("Perimeter of circle\n");
+        printf("Enter the radius:");
+        scanf("%d",&r);
+        Pcircle=2*3.14*r;
+        printf("Perimeter of Circle:%d\n",Pcircle);
+        break;
+        case 6:
+        printf("Perimeter of Rectangle\n");
+        printf("Enter the length:");
+        scanf("%d",&l);
+        printf("Enter the width:");
+        scanf("%d",&w);
+        Prectangle=2*(l+w);
+        printf("Perimeter of Rectangle:%d\n",Prectangle);
+        break;
+        case 7:
+        printf("Perimeter of Triangle\n");
+        printf("Enter the length:");
+        scanf("%d",&l);
+        printf("Enter the width:");
+        scanf("%d",&w);
+        Prectangle=2*(l+w);
+        printf("Perimeter of Rectangle:%d\n",Ptriangle);
+        break;
+        case 8:
+        printf("Perimeter of Square\n");
+        printf("Enter the side:");
+        scanf("%d",&s);
+        Psquare=s*s;
+        printf("Area of Square:%d\n",Psquare);
+        break;
+        
+    }
+    
+}
+-----------------------------------------------------------------
+OUTPUT:
+
+----choose an option----
+1.Area of Circle
+2.Area of Rectangle
+3.Area of Triangle
+4.Area of Square
+5.Perimeter of Circle
+6.Perimeter of Rectangle
+7.Perimeter of Triangle
+8.Perimeter of Square
+--------------------
+Enter your choice:5
+Perimeter of circle
+Enter the radius:42
+Perimeter of Circle:263
+
+
+=== Code Exited With Errors ===
