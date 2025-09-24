@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main() {
+    int i = 15;
+    while(i<= 35) {
+        i++; 
+    if(i == 23) {
+        continue;
+    }
+    if(i==28) {
+        break;
+    }
+     printf("%d\n", i);
+}
+}
+---------------------------------
+OUTPUT:
+16
+17
+18
+19
+20
+21
+22
+24
+25
+26
+27
+
+
+=== Code Execution Successful ===
