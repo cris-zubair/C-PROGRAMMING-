@@ -1,0 +1,54 @@
+DO WHILE PROGRAM
+-------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    int choice;
+    do {
+        printf("\n.....Menu....\n");
+        printf("1.Say Hello\n");
+        printf("2.Say Bye\n");
+        printf("3.Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+            printf("\nHello!\n");
+            break;
+            case 2:
+            printf("Bye!\n");
+            break;
+            case 3:
+            printf("Exiting....\n");
+            break;
+            default:
+            printf("Invalid Choice!\n");
+        }
+    }
+    while(choice!=3);
+    return 0;
+}
+--------------------------------------------------------------------
+OUTPUT:
+
+.....Menu....
+1.Say Hello
+2.Say Bye
+3.Exit
+Enter your choice: 1
+
+Hello!
+
+.....Menu....
+1.Say Hello
+2.Say Bye
+3.Exit
+Enter your choice: 2
+Bye!
+
+.....Menu....
+1.Say Hello
+2.Say Bye
+3.Exit
+Enter your choice: 

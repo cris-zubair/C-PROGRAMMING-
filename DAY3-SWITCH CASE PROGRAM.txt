@@ -1,0 +1,59 @@
+SWITCH CASE PROGRAM
+----------------------------------------------------------------------
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int choice;
+    float circle,triangle,rectangle,square;
+    float l,b,h,r;
+    printf("Enter a given values:\n");
+    scanf("%f %f %f %f",&l,&b,&h,&r);
+    printf("choose an option:\n");
+    printf("1.AREA OF CIRCLE:\n");
+    printf("2.AREA OF TRIANGLE:\n");
+    printf("3.AREA OF RECTANGLE:\n");
+    printf("4.AREA OF SQUARE:\n");
+    printf("Enter a choice: ");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 1:
+        circle=M_PI*r*r;
+        printf("area of circle: %f",circle);
+        break;
+        case 2:
+        triangle=1/2*b*h;
+        printf("area of triangle: %f",triangle);
+        break;
+        case 3:
+        rectangle=l*b;
+        printf("area of rectangle: %f",rectangle);
+        break;
+        case 4:
+        square=l*l;
+        printf("area of square: %f",square);
+        break;
+        default:
+        printf("invalid");
+        break;
+    }
+    return 0;
+}
+--------------------------------------------------------------------
+OUTOUT:
+
+Enter a given values:
+1
+2
+3
+4
+choose an option:
+1.AREA OF CIRCLE:
+2.AREA OF TRIANGLE:
+3.AREA OF RECTANGLE:
+4.AREA OF SQUARE:
+Enter a choice: 2
+area of triangle: 3.000000
+
+=== Code Execution Successful ===
