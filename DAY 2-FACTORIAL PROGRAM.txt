@@ -1,0 +1,27 @@
+FACTORIAL PROGRAM
+-------------------------------------------------------------
+#include<stdio.h>
+int main(){
+    int n,i;
+    int fact=1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    if(n<0){
+        printf("Factorial is not for -ve numbers");
+    }
+    else{
+        for(i=1;i<=n;i++){
+            fact*=i;
+        }
+        printf("Factorial of %d = %d\n",n,fact);
+    }
+    return 0;
+}
+--------------------------------------------------------------
+OUTPUT:
+
+Enter a number: 5
+Factorial of 5 = 120
+
+
+=== Code Execution Successful ===
