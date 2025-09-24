@@ -1,0 +1,35 @@
+FOR LOOP PROGRAM
+----------------------------------------------------------
+#include<stdio.h>
+int main(){
+    int i,n,r;
+    printf("Enter a number:");
+    scanf("%d",&n);
+    printf("Enter the range: ");
+    scanf("%d",&r);
+    for(i=1;i<=r;i++){
+        printf("%d * %d =%d \n",n,i,n*i);
+    }
+    return 0;
+}
+------------------------------------------------------------
+OUTPUT
+Enter a number:12
+Enter the range: 14
+12 * 1 =12 
+12 * 2 =24 
+12 * 3 =36 
+12 * 4 =48 
+12 * 5 =60 
+12 * 6 =72 
+12 * 7 =84 
+12 * 8 =96 
+12 * 9 =108 
+12 * 10 =120 
+12 * 11 =132 
+12 * 12 =144 
+12 * 13 =156 
+12 * 14 =168 
+
+
+=== Code Execution Successful ===
