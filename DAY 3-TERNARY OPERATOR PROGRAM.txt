@@ -1,0 +1,18 @@
+TERNARY OPERATOR PROGRAM
+----------------------------------------------------
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Enter number:");
+    scanf("%d",&num);
+    (num%2==0)?printf("Even\n"):printf("Odd\n");
+    return 0;
+}
+-----------------------------------------------------
+OUTPUT:
+Enter number:5
+Odd
+
+
+=== Code Execution Successful ===
