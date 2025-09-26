@@ -1,0 +1,25 @@
+DAY 5 - SUM OF EVEN AND ODD NUMBERS IN AN ARRAY
+
+#include <stdio.h>
+int main()
+{
+   int i,n,x,even=0,odd=0;
+   printf("Enter limit to an array: ");
+   scanf("%d",&n);
+   int a[n];
+   printf("Add numbers to an array : ");
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   for(i=0;i<n;i++)
+   {
+       if(a[i]%2==0)
+       even += a[i];
+       else
+       odd += a[i];
+   }
+   printf("the sum of even numbers is : %d\n",even);
+   printf("the sum of odd numbers is : %d\n",odd);
+    return 0;
+}
