@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5];
+    int i;
+    printf("Enter 5 numbers : ");
+    for(i=0;i<5;i++)
+    {
+       scanf("%d",&arr[i]);
+    }
+    printf("Entered numbers are : \n");
+    for(i=0;i<5;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    return 0;
+}
+OUTPUT:
+Enter 5 numbers : 5
+25
+50
+75
+100
+Entered numbers are : 
+5 25 50 75 100 
+=== Code Execution Successful ===

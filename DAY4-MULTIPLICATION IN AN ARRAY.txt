@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, k;
+    long long product = 1;
+    int arr[3][3][3];
+
+    printf("Enter 27 elements for the 3x3x3 array:\n");
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            for (k = 0; k < 3; k++) {
+                scanf("%d", &arr[i][j][k]);
+            }
+        }
+    }
+
+    printf("\nThe 3D array elements are:\n");
+    for (i = 0; i < 3; i++) {
+        printf("Layer %d:\n", i);
+        for (j = 0; j < 3; j++) {
+            for (k = 0; k < 3; k++) {
+                printf("%d ", arr[i][j][k]);
+            }
+            printf("\n");
+        }
+        printf("\n");
+    }
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            for (k = 0; k < 3; k++) {
+                product *= arr[i][j][k];
+            }
+        }
+    }
+
+    printf("Multiplication of all elements = %lld\n", product);
+
+    return 0;
+}
+OUTPUT:
+Enter 27 elements for the 3x3x3 array:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+9
+8
+7
+6
+5
+4
+3
+2
+1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+The 3D array elements are:
+Layer 0:
+1 2 3 
+4 5 6 
+7 8 9 
+
+Layer 1:
+9 8 7 
+6 5 4 
+3 2 1 
+
+Layer 2:
+1 2 3 
+4 5 6 
+7 8 9 
+
+Multiplication of all elements = 47784725839872000
+=== Code Execution Successful ===
